@@ -39,12 +39,14 @@ Built using **HTML, CSS, JavaScript, and TensorFlow.js**
 
 ## 🛠️ How to Run Locally
 
+```bash
+
 ### 1️⃣ Clone the repository
 
-```bash
+
 git clone https://github.com/Vedantrajhans/Live-Object-Detection-System.git
 cd Live-Object-Detection-System
-2️⃣ Run using a local server (recommended)
+### 2️⃣ Run using a local server (recommended)
 
 Option 1: VS Code Live Server
 Install Live Server extension

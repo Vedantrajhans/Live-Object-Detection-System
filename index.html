@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Object Detection</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎥 Live Object Detection</h1>
+      <p class="subtitle">Using TensorFlow.js COCO-SSD Model</p>
+
+      <div class="controls">
+        <button id="startBtn" class="btn btn-start">Start Camera</button>
+        <button id="stopBtn" class="btn btn-stop" disabled>Stop Camera</button>
+        <div class="stats">
+          <span id="fps">FPS: 0</span>
+          <span id="objectCount">Objects: 0</span>
+        </div>
+      </div>
+
+      <div class="video-container">
+        <video id="webcam" autoplay playsinline></video>
+        <canvas id="canvas"></canvas>
+      </div>
+
+      <div id="status" class="status">Click "Start Camera" to begin</div>
+
+      <div class="detected-objects">
+        <h3>Detected Objects:</h3>
+        <div id="objectList"></div>
+      </div>
+    </div>
+
+    <!-- TensorFlow.js and COCO-SSD Model -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.11.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd@2.2.3"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
